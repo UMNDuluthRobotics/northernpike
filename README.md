@@ -1,4 +1,5 @@
-# UMD Robotics Club ![](images/logo.png)
+# UMD Robotics Club
+![](images/logo.png)
 # NorthernPike
 [![Build Status](https://travis-ci.com/UMNDuluthRobotics/northernpike.svg?branch=master)](https://travis-ci.com/UMNDuluthRobotics/northernpike)
 
