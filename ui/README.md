@@ -22,6 +22,23 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Video Stream Setup
+
+#### To build and install mjpg-streamer
+```
+git clone https://github.com/jacksonliam/mjpg-streamer
+sudo apt-get install cmake libjpeg8-dev
+sudo apt-get install gcc g++
+cd mjpg-streamer/mjpg-streamer-experimental
+make
+sudo make install
+export LD_LIBRARY_PATH=.
+```
+#### To run mjpg-streamer
+```
+./mjpg_streamer -o "output_http.so -w ./www" -i "input_uvc.so"
+```
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
