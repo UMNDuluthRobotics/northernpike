@@ -4,7 +4,6 @@ import {CameraviewComponent} from './cameraview.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {ThreejsComponent} from '../threejs/threejs.component';
 import {VideoComponent} from '../video/video.component';
 
 describe('CameraviewComponent', () => {
@@ -15,7 +14,6 @@ describe('CameraviewComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         CameraviewComponent,
-        ThreejsComponent,
         VideoComponent
       ],
 
