@@ -4,19 +4,15 @@ import time
 import random
 import importlib
 from rover import rover
-from niceSensor import niceSensor
 from flask import Flask, Response, redirect, request, url_for
 
 app = Flask(__name__)
 
-# myGyro = niceSensor(3)
-# myCompass = niceSensor(1)
-# myBarometer = niceSensor(1)
 nPike = rover()
 
 
 def nPikeStringData():
-    returnString = "%s, %s, %s" % (nPike.getRoverGyro(), nPike.getRoverMagnometer(), nPike.getRoverBarometer())
+    returnString = "%s, %s, %s" % (nPike.getRoverVoltage(), nPike.getRoverCurrent(), nPike.getRoverMagnometer())
     return returnString
 
 
@@ -33,8 +29,7 @@ def index():
 
 
 if __name__ == "__main__":
-    while True:
-        print(nPike.getRoverBarometer())
 
     app.run(host='0.0.0.0', port=80)
+
 
