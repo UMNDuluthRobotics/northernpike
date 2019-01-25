@@ -1,4 +1,4 @@
-# 1/usr/bin/env python
+# !/usr/bin/env python3
 import itertools
 import time
 import random
@@ -29,7 +29,13 @@ def index():
 
 
 if __name__ == "__main__":
-
+    x=0
+    while True:
+        nPike.sendJoystick([x,2,1])
+        print(x)
+        time.sleep(1)
+        if x == 9: x = 0
+        else: x+=1
     app.run(host='0.0.0.0', port=80)
 
 
