@@ -10,7 +10,9 @@ This project uses [Angular CLI](https://github.com/angular/angular-cli) version 
 
 ## Development server
 
-At this point developing the Client UI using the `aiohttp` based server is recommended. Use `ng build --watch` to compile the project and watch for changes. The Python server serves the files generated in `northernpike\ui\dist`.
+At this point developing the Client UI using the `aiohttp` based server is recommended. Use `ng build --watch` in the `src` directory to compile the project and watch for changes. The Python server serves the files generated in `northernpike\ui\dist`.
+
+If `ng build --watch` gives you an error, try running `npm install -g @angular/cli@latest`.
 
 ## Code scaffolding
 
