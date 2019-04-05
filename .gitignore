@@ -86,3 +86,11 @@ fabric.properties
 
 
 # End of https://www.gitignore.io/api/webstorm
+*.pyc
+.idea/vcs.xml
+*.xml
+*.xml
+.idea/deployment.xml
+.idea/northernpike.iml
+.idea/deployment.xml
+.idea/deployment.xml
