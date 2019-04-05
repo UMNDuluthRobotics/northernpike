@@ -7,11 +7,12 @@ import {WebsocketService} from './websocket.service';
 import {RovStateService} from './rovstate.service';
 import {IMPORTS} from './app.imports';
 import {DECLARATIONS} from './app.declarations';
+import {GamepadService} from './gamepad.service';
 
 @NgModule({
   declarations: DECLARATIONS,
   imports: IMPORTS,
-  providers: [WebsocketService, RovStateService],
+  providers: [WebsocketService, RovStateService, GamepadService],
   bootstrap: [AppComponent],
   exports: [
     AppComponent,
@@ -22,3 +23,4 @@ import {DECLARATIONS} from './app.declarations';
 })
 export class AppModule {
 }
+

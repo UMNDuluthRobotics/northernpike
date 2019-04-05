@@ -9,6 +9,8 @@ import {ThrusterGaugeComponent} from './thruster-gauge/thruster-gauge.component'
 import {BatteryGaugeComponent} from './battery-gauge/battery-gauge.component';
 import {SlideSwitchComponent} from './slide-switch/slide-switch.component';
 import {LightGaugeComponent} from './light-gauge/light-gauge.component';
+import {GamepadComponent} from './gamepad/gamepad.component';
+
 
 export const DECLARATIONS = [
   AppComponent,
@@ -21,5 +23,6 @@ export const DECLARATIONS = [
   ThrusterGaugeComponent,
   BatteryGaugeComponent,
   SlideSwitchComponent,
-  LightGaugeComponent
+  LightGaugeComponent,
+  GamepadComponent
 ];
