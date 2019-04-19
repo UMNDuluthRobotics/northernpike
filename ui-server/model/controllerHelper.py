@@ -8,7 +8,7 @@ from websocket import create_connection
 # -------- Main Program Loop -----------
 pygame.init()
 pygame.joystick.init()
-ws = create_connection("ws://192.168.43.1:12345")
+ws = create_connection("ws://0.0.0.0:8080")
 
 while True:
     pygame.event.get()
